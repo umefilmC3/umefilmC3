@@ -1,0 +1,23 @@
+{
+  "name": "eureka-platform",
+  "version": "1.0.0",
+  "description": "共読・共学・共語の学習コミュニティプラットフォーム",
+  "scripts": {
+    "install:all": "npm install && cd client && npm install && cd ../server && npm install",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm run dev",
+    "build": "cd client && npm run build"
+  },
+  "keywords": [
+    "learning",
+    "community",
+    "education",
+    "knowledge-sharing"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
